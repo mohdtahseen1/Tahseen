@@ -8,15 +8,24 @@ body{
      #EA8D8D, #e95fb2, #FFBBBB);
     
 }
-.container{
-    width: 100vw;
+header{
+    position: fixed;
+    background-color: beige;
+    border-radius: 2rem;
 }
+.container{
+    width: 100%;
+}
+
 .row{
-    width: 90%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
+    /* display: flex; */
     justify-content: space-evenly;
+}
+.mt{
+    margin-top: 1rem;
 }
 .h-name{
     margin-right: 2rem;
@@ -34,21 +43,21 @@ body{
 .menu-item li a{
     text-decoration: none;
 }
-.col{
-    width: 50%;
-    position: relative;
+.col-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    
 }
-.col img{
-    width: 20rem;
-    height: 20rem;
+.col-img img{
+    width: 100%;
+    height: 60%;
     border-radius: 50%;
 }
-.col p{
-    text-align: center;
-}
 .col .content{
-    position: absolute;
-    top: 25%;
+    font-size: 2rem;
+    text-align: center;
 }
 .content button{
     padding: 10px;
@@ -63,4 +72,156 @@ body{
 }
 .content button:last-child{
     background-color: rgb(53, 53, 53);
+}
+.content div a{
+    font-size: 3rem;
+    margin-right: 1rem;
+}
+.content div a i{
+    padding: 5px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+}
+#about{
+    width: 100%;
+    text-align: center;
+}
+.card{
+    margin: 1rem;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 2rem;
+    
+}
+#into{
+    width: 100%;
+    text-align: justify;
+}
+.card .icon {
+    font-size: 1.5rem;
+}
+.card .icon i{
+    font-size: 3rem;
+}
+#skills-sec{
+    text-align: center;
+    width: 100%;
+}
+.skil-icons {
+    display: flex;
+    justify-content: space-evenly;
+}
+#projects{
+    text-align: center;
+}
+.icon-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 400px) {
+    .row{
+        display: block;
+    }
+    header{
+        width: 95%;
+    }
+    .menu-item{
+        width: 100%;
+        padding: 0;
+    }
+    .h-name{
+        text-align: center;
+    }
+    .col-img{
+        width: 100%;
+    }
+    .col-img img{
+        height: 270px;
+    }
+    .col{
+        width: 100%;
+    }
+    
+    .card{
+        width: 77%;
+    }
+}
+@media only screen and (min-width: 400px){
+    .row{
+        display: block;
+    }
+    header{
+        width: 96%;
+    }
+    .menu-item{
+        width: 100%;
+        padding: 0;
+    }
+    .h-name{
+        text-align: center;
+    }
+    .col-img{
+        width: 100%;
+    }
+    .col-img img{
+        height: 270px;
+    }
+    .col{
+        width: 100%;
+    }
+    
+    
+    .card{
+        width: 80%;
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .row{
+        display: flex;
+    }
+    header{
+        width: 98%;
+    }
+    .h-name{
+        margin-left: 1rem;
+    }
+    .w-100{
+        width: 100% !important;
+    }
+    .menu-item{
+        width: 40%;
+        padding: 0;
+    }
+    .col{
+        width: 70%;
+    }
+    .col-img{
+        width: 30%;
+        
+    }
+    .col-img img{
+        height: 60%;
+    }
+    .card{
+        width: 50%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
 }
