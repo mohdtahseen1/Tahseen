@@ -13,9 +13,7 @@ header{
     background-color: beige;
     border-radius: 2rem;
 }
-#home{
-    margin-top: 3rem;
-}
+
 .container{
     width: 100%;
 }
@@ -132,6 +130,9 @@ header{
     header{
         width: 95%;
     }
+    #home{
+        margin-top: 0;
+    }
     .menu-item{
         width: 100%;
         padding: 0;
@@ -143,6 +144,7 @@ header{
         width: 100%;
     }
     .col-img img{
+        margin-top: 6.2rem;
         height: 270px;
     }
     .col{
@@ -160,6 +162,9 @@ header{
     header{
         width: 96%;
     }
+    #home{
+        margin-top: 0;
+    }
     .menu-item{
         width: 100%;
         padding: 0;
@@ -171,6 +176,7 @@ header{
         width: 100%;
     }
     .col-img img{
+        margin-top: 6.2rem;
         height: 270px;
     }
     .col{
@@ -190,6 +196,9 @@ header{
     header{
         width: 98%;
     }
+    #home{
+        margin-top: 5rem;
+    }
     .h-name{
         margin-left: 1rem;
     }
@@ -208,6 +217,7 @@ header{
         
     }
     .col-img img{
+        margin-top: 0;
         height: 60%;
     }
     .card{
