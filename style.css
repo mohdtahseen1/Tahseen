@@ -13,6 +13,9 @@ header{
     background-color: beige;
     border-radius: 2rem;
 }
+#home{
+    margin-top: 4rem;
+}
 
 .container{
     width: 100%;
