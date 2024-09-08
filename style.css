@@ -4,13 +4,12 @@
 } */
 body{
     font-family: "Poppins", sans-serif;
-    background: linear-gradient(#fdabc3, #c4f279, #8a6eed,
-     #EA8D8D, #e95fb2, #FFBBBB);
+    background-color: #3D52A0;
+    color: #EDE8F5;
     
 }
 header{
     position: fixed;
-    background-color: beige;
     border-radius: 2rem;
 }
 #home{
@@ -25,7 +24,6 @@ header{
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    /* display: flex; */
     justify-content: space-evenly;
 }
 .mt{
@@ -33,6 +31,7 @@ header{
 }
 .h-name{
     margin-right: 2rem;
+    float: left;
 }
 .m-auto{
     margin: auto;
@@ -47,6 +46,7 @@ header{
 }
 .menu-item li a{
     text-decoration: none;
+    color: #EDE8F5;
 }
 .col-img {
     display: flex;
@@ -56,8 +56,8 @@ header{
     
 }
 .col-img img{
-    width: 100%;
-    height: 60%;
+    width: 270px;
+    height: 270px;
     border-radius: 50%;
 }
 .col .content{
@@ -66,24 +66,28 @@ header{
 }
 .content button{
     padding: 10px;
+    border: 2px solid black;
     border-radius: 1rem;
     background: transparent;
-    color: white;
+    
     margin-left: 2rem;
 }
 .content button a{
-    color: white;
+    color: black;
+    
     text-decoration: none;
 }
-.content button:last-child{
-    background-color: rgb(53, 53, 53);
+.content button:nth-child(5){
+    background-color: #ecffbbe6;
+
 }
 .content div a{
-    font-size: 3rem;
+    font-size: 2.3rem;
     margin-right: 1rem;
 }
 .content div a i{
-    padding: 5px;
+    padding: 10px;
+    border: 2px solid #cd1919;
     border-radius: 50%;
     background-color: black;
     color: white;
@@ -97,6 +101,7 @@ header{
     padding: 1.5rem;
     background-color: white;
     border-radius: 2rem;
+    color: black;
     
 }
 #into{
@@ -108,6 +113,9 @@ header{
 }
 .card .icon i{
     font-size: 3rem;
+}
+.card .icon a i{
+    font-size: 2.2rem;
 }
 #skills-sec{
     text-align: center;
@@ -130,25 +138,35 @@ header{
     .row{
         display: block;
     }
+    
+    .m-view{
+        width: 50%;
+        float: right;
+    }
+    .m-view h4 i{
+        margin-top: -8px;
+        font-size: 2rem;
+    }
     header{
         width: 95%;
+        background-color: transparent;
     }
     #home{
         margin-top: 0;
     }
     .menu-item{
+        display: none;
         width: 100%;
         padding: 0;
     }
-    .h-name{
-        text-align: center;
+    .menu-item li{
+        padding: 5px;
     }
     .col-img{
         width: 100%;
     }
     .col-img img{
         margin-top: 6.2rem;
-        height: 270px;
     }
     .col{
         width: 100%;
@@ -164,23 +182,34 @@ header{
     }
     header{
         width: 96%;
+        background-color: transparent;
     }
+    
     #home{
         margin-top: 0;
     }
+    
     .menu-item{
+        display: none;
         width: 100%;
         padding: 0;
     }
-    .h-name{
-        text-align: center;
+    .menu-item li{
+        padding: 5px;
+    }
+    .m-view{
+        width: 50%;
+        float: right;
+    }
+    .m-view h4 i{
+        margin-top: -8px;
+        font-size: 2rem;
     }
     .col-img{
         width: 100%;
     }
     .col-img img{
         margin-top: 6.2rem;
-        height: 270px;
     }
     .col{
         width: 100%;
@@ -198,7 +227,11 @@ header{
     }
     header{
         width: 98%;
+        background-color: #7091E6;
     }
+    /* .show{
+        display: flex !important;
+    } */
     #home{
         margin-top: 5rem;
     }
@@ -209,8 +242,18 @@ header{
         width: 100% !important;
     }
     .menu-item{
+        display: flex;
         width: 40%;
         padding: 0;
+    }
+    .menu-item li{
+        padding: 0;
+    }
+    .m-view{
+        width: 100%;
+    }
+    #menu-icon{
+        display: none;
     }
     .col{
         width: 70%;
